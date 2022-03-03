@@ -1,0 +1,60 @@
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+}
+
+/* overview page css */
+.overview_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.overview_area .single_view {
+  border-radius: 10px;
+  width: 100%;
+  margin: 20px;
+  padding: 70px 30px;
+}
+
+.overview_area .single_view h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color:#fff;
+  padding-bottom: 20px;
+}
+
+.overview_area .single_view p {
+  font-size: 22px;
+  color:#fff;
+  margin:0px;
+}
+.single_view.submission {
+  background: #1fa0de;
+}
+
+.single_view.expense {
+  background: #0e9505;
+}
+
+.single_view.meal {
+  background: #c98406;
+}
+.single_view.meal_reat{
+  background: #122fbdc7;
+}
+
+.single_view.balance {
+  background: #12aebdc7;
+}
+
+table.widefat.fixed.striped.overview_table {
+  margin-top: 10px;
+}

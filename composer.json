@@ -1,0 +1,19 @@
+{
+    "name": "user/oop_plugin",
+    "description": "This is OOP style plugin",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Musharaf Hossain",
+            "email": "musharaf.wealcoder@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Root\\": "./"
+        }
+    }
+}
