@@ -18,9 +18,10 @@ class Ajax_handler{
   {
     if($_REQUEST['param'] == 'add_member'){
 
+      print_r($_REQUEST);
       $user_id = wp_create_user( $_REQUEST['username'], $_REQUEST['password'], $_REQUEST['email']);
-      $user_id = new WP_User($user_id);
-      $user_id->set_role('subscriber');
+      $member_id = new WP_User($user_id);
+      $member_id->set_role('subscriber');
 
 
       global $wpdb;
@@ -30,8 +31,8 @@ class Ajax_handler{
           'name'     => $_REQUEST['name'],
           'email'    => $_REQUEST['email'],
           'phone'    => $_REQUEST['phone'],
-          'username' => $_REQUEST['username'],
-          
+          'user_id'  => $user_id
+           
         )
       );
     }
